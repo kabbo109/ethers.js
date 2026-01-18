@@ -132,6 +132,19 @@ packages designed to further enhance the functionality and experience.
 - [Optimism Utilities](https://github.com/ethers-io/ext-utils-optimism) - A collection of Optimism utilities
 - [LedgerSigner](https://github.com/ethers-io/ext-signer-ledger) - A Signer to interact directly with Ledger Hardware Wallets
 
+## Quick Example (Beginner Friendly)
+
+```js
+import { ethers } from "ethers";
+
+const provider = new ethers.JsonRpcProvider("https://rpc.ankr.com/eth");
+
+async function main() {
+  const block = await provider.getBlockNumber();
+  console.log("Current block:", block);
+}
+
+main();
 
 License
 -------
